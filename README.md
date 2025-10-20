@@ -18,6 +18,18 @@ It demonstrates a foundational DevOps workflow: building, containerizing, and au
 <li>🧱 Docker Compose setup for running all services locally (App + Nginx + Jenkins)</li>
 </ul>
 
+## 🚀 Tech Stack
+<ul>
+<li>Frontend: Next.js (Node.js)</li>
+
+<li>Reverse Proxy: Nginx</li>
+
+<li>Automation: Jenkins</li>
+
+<li>Containerization: Docker & Docker Compose</li>
+
+</ul>
+
 First, run the development server:
 
 ```bash
