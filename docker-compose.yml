@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      # - NEXT_PUBLIC_API_URL=...
+    expose:
+      - 3000
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:stable-alpine
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"   # if you later add certs for TLS
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    user: root                    # optional; remove for stricter setups
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock   # allows Jenkins to run Docker (build agents)
+      - /usr/bin/docker:/usr/bin/docker             # optional: share docker binary with the container
+    restart: unless-stopped
+    # placed last so it's easy to spot; depends_on not necessary but you could add it if desired
+
+volumes:
+  jenkins_home:
