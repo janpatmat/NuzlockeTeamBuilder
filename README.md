@@ -1,6 +1,22 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## <img width="128" height="128" alt="pikachu (1)" src="https://github.com/user-attachments/assets/9bca7c38-8fba-4a1e-89a3-a8efd6b5ecbf" /> Pokedex — Next.js + Jenkins + Docker + Nginx
+
+This project is a Pokedex web application built with Next.js, containerized using Docker, served through Nginx, and integrated with a Jenkins CI pipeline for automated build verification.
+
+It demonstrates a foundational DevOps workflow: building, containerizing, and automating a simple production-ready web app.
+## 🚀 Features
+<ul>
+<li>⚛️ Next.js frontend (React-based)</li>
+
+<li>🐳 Docker containerization (multi-stage production build)</li>
+
+<li>🌐 Nginx reverse proxy for serving production traffic</li>
+
+<li>🧩 Jenkins continuous integration pipeline for build and test automation</li>
+
+<li>🧱 Docker Compose setup for running all services locally (App + Nginx + Jenkins)</li>
+</ul>
 
 First, run the development server:
 
