@@ -1,3 +1,5 @@
+## Update: Reworked to become a nuzlocke team builder
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## <img width="128" height="128" alt="pikachu (1)" src="https://github.com/user-attachments/assets/9bca7c38-8fba-4a1e-89a3-a8efd6b5ecbf" /> Pokedex — Next.js + Jenkins + Docker + Nginx
