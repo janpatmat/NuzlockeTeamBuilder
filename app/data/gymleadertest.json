@@ -1,0 +1,11 @@
+[
+    {"id": 1, "name": "Brock", "image" : "/assets/brock.png"},
+    {"id": 2,"name": "Misty", "image" : "/assets/misty.png"},
+    {"id": 3,"name": "Lt. Surge", "image" : "/assets/ltsurge.png"},
+    {"id": 4,"name": "Erika", "image" : "/assets/erika.png"},
+    {"id": 5,"name": "Sabrina", "image" : "/assets/sabrina.png"},
+    {"id": 6,"name": "Koga", "image" : "/assets/koga.png"},
+    {"id": 7,"name": "Blaine", "image" : "/assets/blaine.png"},
+    {"id": 8,"name": "Giovanni", "image" : "/assets/giovanni.png"}
+
+]

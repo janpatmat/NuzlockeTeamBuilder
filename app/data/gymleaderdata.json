@@ -1,0 +1,53 @@
+{
+    "region": "Kanto",
+    "gymLeaders": [
+        {
+            "name": "Brock",
+            "city": "Pewter City",
+            "type": ["Rock", "Ground"],
+            "image": "./assets/brock.png"
+        },
+        {
+            "name": "Misty",
+            "city": "Cerulean City",
+            "type": ["Water"],
+            "image": "./assets/misty.png"
+        },
+        {
+            "name": "Lt. Surge",
+            "city": "Vermilion City",
+            "type": ["Electric"],
+            "image": "./assets/lt_surge.png"
+        },
+        {
+            "name": "Erika",
+            "city": "Celadon City",
+            "type": ["Grass"],
+            "image": "./assets/erika.png"
+        },
+        {
+            "name": "Koga",
+            "city": "Fuchsia City",
+            "type": ["Poison"],
+            "image": "./assets/koga.png"
+        },
+        {
+            "name": "Sabrina",
+            "city": "Saffron City",
+            "type": ["Psychic"],
+            "image": "./assets/sabrina.png"
+        },
+        {
+            "name": "Blaine",
+            "city": "Cinnabar Island",
+            "type": ["Fire"],
+            "image": "./assets/blaine.png"
+        },
+        {
+            "name": "Giovanni",
+            "city": "Viridian City",
+            "type": ["Ground"],
+            "image": "./assets/giovanni.png"
+        }
+    ]
+}
