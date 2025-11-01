@@ -1,6 +1,25 @@
 [
-    {"id": 1, "name": "Brock", "image" : "/assets/brock.png"},
-    {"id": 2,"name": "Misty", "image" : "/assets/misty.png"},
+    {"id": 1, "name": "Brock", "image" : "/assets/brock.png", 
+    "pokemon": [
+        {
+        "pokemonName": "Onix", "pokemonMoves": ["Tackle", "Bind", "Harden", "Rock Tomb"] 
+        },
+        {
+        "pokemonName": "Geodude", "pokemonMoves": ["Tackle", "Defense Curl"]
+        }
+   ] },
+
+    {"id": 2,"name": "Misty", "image" : "/assets/misty.png", 
+        "pokemon": [
+        {
+        "pokemonName": "Staryu", "pokemonMoves": ["Tackle", "Recover", "Harden", "Water Pulse"] 
+        },
+        {
+        "pokemonName": "Starmie", "pokemonMoves": ["Rapid Spin", "Swift", "Recover", "Water Pulse"]
+        }
+   ]
+
+    },
     {"id": 3,"name": "Lt. Surge", "image" : "/assets/ltsurge.png"},
     {"id": 4,"name": "Erika", "image" : "/assets/erika.png"},
     {"id": 5,"name": "Sabrina", "image" : "/assets/sabrina.png"},
