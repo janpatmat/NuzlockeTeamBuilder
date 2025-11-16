@@ -5,6 +5,7 @@
     "image": "/assets/brock.png",
     "pokemon": [
       {
+        "pokemonId": 1,
         "pokemonName": "Onix",
         "pokemonMoves": {
           "Tackle": "Normal",
@@ -14,6 +15,7 @@
         }
       },
       {
+        "pokemonId": 2,
         "pokemonName": "Geodude",
         "pokemonMoves": {
           "Tackle": "Normal",
@@ -28,6 +30,7 @@
     "image": "/assets/misty.png",
     "pokemon": [
       {
+        "pokemonId": 3,
         "pokemonName": "Staryu",
         "pokemonMoves": {
           "Tackle": "Normal",
@@ -37,6 +40,7 @@
         }
       },
       {
+        "pokemonId": 4,
         "pokemonName": "Starmie",
         "pokemonMoves": {
           "Rapid Spin": "Normal",
@@ -52,7 +56,8 @@
     "name": "Lt. Surge",
     "image": "/assets/ltsurge.png",
     "pokemon": [
-        {
+      {
+        "pokemonId": 5,
         "pokemonName": "Voltorb",
         "pokemonMoves": {
           "Shock Wave": "Electric",
@@ -60,7 +65,9 @@
           "Screech": "Normal",
           "Sonic Boom": "Normal"
         }
-      },{
+      },
+      {
+        "pokemonId": 6,
         "pokemonName": "Pikachu",
         "pokemonMoves": {
           "Shock Wave": "Electric",
@@ -68,7 +75,9 @@
           "Quick Attack": "Normal",
           "Double Team": "Normal"
         }
-      },{
+      },
+      {
+        "pokemonId": 7,
         "pokemonName": "Raichu",
         "pokemonMoves": {
           "Shock Wave": "Electric",
@@ -84,7 +93,8 @@
     "name": "Erika",
     "image": "/assets/erika.png",
     "pokemon": [
-        {
+      {
+        "pokemonId": 8,
         "pokemonName": "Victreebel",
         "pokemonMoves": {
           "Stun Spore": "Grass",
@@ -94,6 +104,7 @@
         }
       },
       {
+        "pokemonId": 9,
         "pokemonName": "Tangela",
         "pokemonMoves": {
           "Constrict": "Normal",
@@ -103,6 +114,7 @@
         }
       },
       {
+        "pokemonId": 10,
         "pokemonName": "Vileplume",
         "pokemonMoves": {
           "Sleep Powder": "Grass",
@@ -113,12 +125,13 @@
       }
     ]
   },
-   {
+  {
     "id": 5,
     "name": "Koga",
     "image": "/assets/koga.png",
     "pokemon": [
-        {
+      {
+        "pokemonId": 11,
         "pokemonName": "Koffing",
         "pokemonMoves": {
           "Selfdestruct": "Normal",
@@ -126,7 +139,9 @@
           "Smokescreen": "Normal",
           "Toxic": "Poison"
         }
-      },{
+      },
+      {
+        "pokemonId": 12,
         "pokemonName": "Muk",
         "pokemonMoves": {
           "Minimize": "Normal",
@@ -136,6 +151,7 @@
         }
       },
       {
+        "pokemonId": 13,
         "pokemonName": "Koffing",
         "pokemonMoves": {
           "Selfdestruct": "Normal",
@@ -144,7 +160,8 @@
           "Toxic": "Poison"
         }
       },
-       {
+      {
+        "pokemonId": 14,
         "pokemonName": "Weezing",
         "pokemonMoves": {
           "Tackle": "Normal",
@@ -153,7 +170,6 @@
           "Toxic": "Poison"
         }
       }
-    
     ]
   },
   {
@@ -161,7 +177,8 @@
     "name": "Sabrina",
     "image": "/assets/sabrina.png",
     "pokemon": [
-        {
+      {
+        "pokemonId": 15,
         "pokemonName": "Kadabra",
         "pokemonMoves": {
           "Psybeam": "Psychic",
@@ -171,6 +188,7 @@
         }
       },
       {
+        "pokemonId": 16,
         "pokemonName": "Mr-Mime",
         "pokemonMoves": {
           "Barrier": "Psychic",
@@ -180,6 +198,7 @@
         }
       },
       {
+        "pokemonId": 17,
         "pokemonName": "Venomoth",
         "pokemonMoves": {
           "Psybeam": "Psychic",
@@ -189,6 +208,7 @@
         }
       },
       {
+        "pokemonId": 18,
         "pokemonName": "Alakazam",
         "pokemonMoves": {
           "Psychic": "Psychic",
@@ -199,13 +219,13 @@
       }
     ]
   },
- 
   {
     "id": 7,
     "name": "Blaine",
     "image": "/assets/blaine.png",
     "pokemon": [
-        {
+      {
+        "pokemonId": 19,
         "pokemonName": "Growlithe",
         "pokemonMoves": {
           "Bite": "Dark",
@@ -214,7 +234,8 @@
           "Fire Blast": "Fire"
         }
       },
-       {
+      {
+        "pokemonId": 20,
         "pokemonName": "Ponyta",
         "pokemonMoves": {
           "Stomp": "Dark",
@@ -224,6 +245,7 @@
         }
       },
       {
+        "pokemonId": 21,
         "pokemonName": "Rapidash",
         "pokemonMoves": {
           "Stomp": "Dark",
@@ -233,8 +255,9 @@
         }
       },
       {
+        "pokemonId": 22,
         "pokemonName": "Arcanine",
-         "pokemonMoves": {
+        "pokemonMoves": {
           "Bite": "Dark",
           "Roar": "Normal",
           "Take Down": "Normal",
@@ -248,27 +271,30 @@
     "name": "Giovanni",
     "image": "/assets/giovanni.png",
     "pokemon": [
-        {
+      {
+        "pokemonId": 23,
         "pokemonName": "Rhyhorn",
-         "pokemonMoves": {
+        "pokemonMoves": {
           "Take Down": "Normal",
           "Rock Blast": "Rock",
           "Scary Face": "Normal",
           "Earthquake": "Ground"
         }
-      }, 
-       {
+      },
+      {
+        "pokemonId": 24,
         "pokemonName": "Dugtrio",
-         "pokemonMoves": {
+        "pokemonMoves": {
           "Slash": "Normal",
           "Sand Tomb": "Ground",
           "Mud-Slap": "Ground",
           "Earthquake": "Ground"
         }
-      }, 
+      },
       {
+        "pokemonId": 25,
         "pokemonName": "Nidoqueen",
-         "pokemonMoves": {
+        "pokemonMoves": {
           "Double Kick": "Fighting",
           "Earthquake": "Ground",
           "Poison Sting": "Poison",
@@ -276,8 +302,9 @@
         }
       },
       {
+        "pokemonId": 26,
         "pokemonName": "Nidoking",
-         "pokemonMoves": {
+        "pokemonMoves": {
           "Double Kick": "Fighting",
           "Earthquake": "Ground",
           "Poison Sting": "Poison",
@@ -285,15 +312,15 @@
         }
       },
       {
+        "pokemonId": 27,
         "pokemonName": "Nidoking",
-          "pokemonMoves": {
+        "pokemonMoves": {
           "Take Down": "Normal",
           "Rock Blast": "Rock",
           "Scary Face": "Normal",
           "Earthquake": "Ground"
         }
       }
-        
     ]
   }
 ]

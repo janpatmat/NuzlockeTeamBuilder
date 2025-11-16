@@ -63,7 +63,7 @@ console.log(pokemonMovesType.find((item) => item.name === "tackle"));
       
      {leaderPokemon?.map((leaderpokemon) => (
   <Pokebox
-    key={`${activeLeader}-${leaderpokemon.pokemonName}`}
+    key={`${activeLeader}-${leaderpokemon.pokemonName}-${leaderpokemon.pokemonId}`}
     id={activeLeader}
     name={leaderpokemon.pokemonName}
     moves={leaderpokemon.pokemonMoves}
