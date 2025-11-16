@@ -1,30 +1,299 @@
 [
-    {"id": 1, "name": "Brock", "image" : "/assets/brock.png", 
+  {
+    "id": 1,
+    "name": "Brock",
+    "image": "/assets/brock.png",
+    "pokemon": [
+      {
+        "pokemonName": "Onix",
+        "pokemonMoves": {
+          "Tackle": "Normal",
+          "Bind": "Normal",
+          "Harden": "Normal",
+          "Rock-Tomb": "Rock"
+        }
+      },
+      {
+        "pokemonName": "Geodude",
+        "pokemonMoves": {
+          "Tackle": "Normal",
+          "Defense-Curl": "Normal"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Misty",
+    "image": "/assets/misty.png",
+    "pokemon": [
+      {
+        "pokemonName": "Staryu",
+        "pokemonMoves": {
+          "Tackle": "Normal",
+          "Recover": "Normal",
+          "Harden": "Normal",
+          "Water-Pulse": "Water"
+        }
+      },
+      {
+        "pokemonName": "Starmie",
+        "pokemonMoves": {
+          "Rapid Spin": "Normal",
+          "Swift": "Normal",
+          "Recover": "Normal",
+          "Water-Pulse": "Water"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Lt. Surge",
+    "image": "/assets/ltsurge.png",
     "pokemon": [
         {
-        "pokemonName": "Onix", "pokemonMoves": ["Tackle", "Bind", "Harden", "Rock Tomb"] 
-        },
-        {
-        "pokemonName": "Geodude", "pokemonMoves": ["Tackle", "Defense Curl"]
+        "pokemonName": "Voltorb",
+        "pokemonMoves": {
+          "Shock Wave": "Electric",
+          "Tackle": "Normal",
+          "Screech": "Normal",
+          "Sonic Boom": "Normal"
         }
-   ] },
-
-    {"id": 2,"name": "Misty", "image" : "/assets/misty.png", 
-        "pokemon": [
-        {
-        "pokemonName": "Staryu", "pokemonMoves": ["Tackle", "Recover", "Harden", "Water Pulse"] 
-        },
-        {
-        "pokemonName": "Starmie", "pokemonMoves": ["Rapid Spin", "Swift", "Recover", "Water Pulse"]
+      },{
+        "pokemonName": "Pikachu",
+        "pokemonMoves": {
+          "Shock Wave": "Electric",
+          "Thunder Wave": "Electric",
+          "Quick Attack": "Normal",
+          "Double Team": "Normal"
         }
-   ]
-
-    },
-    {"id": 3,"name": "Lt. Surge", "image" : "/assets/ltsurge.png"},
-    {"id": 4,"name": "Erika", "image" : "/assets/erika.png"},
-    {"id": 5,"name": "Sabrina", "image" : "/assets/sabrina.png"},
-    {"id": 6,"name": "Koga", "image" : "/assets/koga.png"},
-    {"id": 7,"name": "Blaine", "image" : "/assets/blaine.png"},
-    {"id": 8,"name": "Giovanni", "image" : "/assets/giovanni.png"}
-
+      },{
+        "pokemonName": "Raichu",
+        "pokemonMoves": {
+          "Shock Wave": "Electric",
+          "Thunder Wave": "Electric",
+          "Quick Attack": "Normal",
+          "Double Team": "Normal"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Erika",
+    "image": "/assets/erika.png",
+    "pokemon": [
+        {
+        "pokemonName": "Victreebel",
+        "pokemonMoves": {
+          "Stun Spore": "Grass",
+          "Acid": "Poison",
+          "Poisonpowder": "Poison",
+          "Giga Drain": "Grass"
+        }
+      },
+      {
+        "pokemonName": "Tangela",
+        "pokemonMoves": {
+          "Constrict": "Normal",
+          "Ingrain": "Grass",
+          "Poisonpowder": "Poison",
+          "Giga Drain": "Grass"
+        }
+      },
+      {
+        "pokemonName": "Vileplume",
+        "pokemonMoves": {
+          "Sleep Powder": "Grass",
+          "Acid": "Poison",
+          "Stun Spore": "Poison",
+          "Giga Drain": "Grass"
+        }
+      }
+    ]
+  },
+   {
+    "id": 5,
+    "name": "Koga",
+    "image": "/assets/koga.png",
+    "pokemon": [
+        {
+        "pokemonName": "Koffing",
+        "pokemonMoves": {
+          "Selfdestruct": "Normal",
+          "Sludge": "Poison",
+          "Smokescreen": "Normal",
+          "Toxic": "Poison"
+        }
+      },{
+        "pokemonName": "Muk",
+        "pokemonMoves": {
+          "Minimize": "Normal",
+          "Sludge": "Poison",
+          "Acid Armor": "Poison",
+          "Toxic": "Poison"
+        }
+      },
+      {
+        "pokemonName": "Koffing",
+        "pokemonMoves": {
+          "Selfdestruct": "Normal",
+          "Sludge": "Poison",
+          "Smokescreen": "Normal",
+          "Toxic": "Poison"
+        }
+      },
+       {
+        "pokemonName": "Weezing",
+        "pokemonMoves": {
+          "Tackle": "Normal",
+          "Sludge": "Poison",
+          "Smokescreen": "Normal",
+          "Toxic": "Poison"
+        }
+      }
+    
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sabrina",
+    "image": "/assets/sabrina.png",
+    "pokemon": [
+        {
+        "pokemonName": "Kadabra",
+        "pokemonMoves": {
+          "Psybeam": "Psychic",
+          "Reflect": "Psychic",
+          "Future Sight": "Psychic",
+          "Calm Mind": "Psychic"
+        }
+      },
+      {
+        "pokemonName": "Mr-Mime",
+        "pokemonMoves": {
+          "Barrier": "Psychic",
+          "Psybeam": "Psychic",
+          "Baton Pass": "Normal",
+          "Calm Mind": "Psychic"
+        }
+      },
+      {
+        "pokemonName": "Venomoth",
+        "pokemonMoves": {
+          "Psybeam": "Psychic",
+          "Gust": "Flying",
+          "Leech Life": "Bug",
+          "Supersonic": "Psychic"
+        }
+      },
+      {
+        "pokemonName": "Alakazam",
+        "pokemonMoves": {
+          "Psychic": "Psychic",
+          "Recover": "Normal",
+          "Future Sight": "Psychic",
+          "Calm Mind": "Psychic"
+        }
+      }
+    ]
+  },
+ 
+  {
+    "id": 7,
+    "name": "Blaine",
+    "image": "/assets/blaine.png",
+    "pokemon": [
+        {
+        "pokemonName": "Growlithe",
+        "pokemonMoves": {
+          "Bite": "Dark",
+          "Roar": "Normal",
+          "Take Down": "Normal",
+          "Fire Blast": "Fire"
+        }
+      },
+       {
+        "pokemonName": "Ponyta",
+        "pokemonMoves": {
+          "Stomp": "Dark",
+          "Bounce": "Flying",
+          "Fire Spin": "Fire",
+          "Fire Blast": "Fire"
+        }
+      },
+      {
+        "pokemonName": "Rapidash",
+        "pokemonMoves": {
+          "Stomp": "Dark",
+          "Bounce": "Flying",
+          "Fire Spin": "Fire",
+          "Fire Blast": "Fire"
+        }
+      },
+      {
+        "pokemonName": "Arcanine",
+         "pokemonMoves": {
+          "Bite": "Dark",
+          "Roar": "Normal",
+          "Take Down": "Normal",
+          "Fire Blast": "Fire"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Giovanni",
+    "image": "/assets/giovanni.png",
+    "pokemon": [
+        {
+        "pokemonName": "Rhyhorn",
+         "pokemonMoves": {
+          "Take Down": "Normal",
+          "Rock Blast": "Rock",
+          "Scary Face": "Normal",
+          "Earthquake": "Ground"
+        }
+      }, 
+       {
+        "pokemonName": "Dugtrio",
+         "pokemonMoves": {
+          "Slash": "Normal",
+          "Sand Tomb": "Ground",
+          "Mud-Slap": "Ground",
+          "Earthquake": "Ground"
+        }
+      }, 
+      {
+        "pokemonName": "Nidoqueen",
+         "pokemonMoves": {
+          "Double Kick": "Fighting",
+          "Earthquake": "Ground",
+          "Poison Sting": "Poison",
+          "Body Slam": "Normal"
+        }
+      },
+      {
+        "pokemonName": "Nidoking",
+         "pokemonMoves": {
+          "Double Kick": "Fighting",
+          "Earthquake": "Ground",
+          "Poison Sting": "Poison",
+          "Thrash": "Normal"
+        }
+      },
+      {
+        "pokemonName": "Nidoking",
+          "pokemonMoves": {
+          "Take Down": "Normal",
+          "Rock Blast": "Rock",
+          "Scary Face": "Normal",
+          "Earthquake": "Ground"
+        }
+      }
+        
+    ]
+  }
 ]

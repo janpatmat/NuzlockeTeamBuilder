@@ -8,27 +8,31 @@ import data from '../data/gymleadertest.json';
 interface PokeStats {
     id: number | null;
     name: string | null;
+    moves: Record<string, string | undefined> | undefined;
+
 
 }
 
-const Pokebox: React.FC<PokeStats> = ({id, name}) => {
+const Pokebox: React.FC<PokeStats> = ({id, name, moves}) => {
 const [pokemon, setPokemon] = useState<any>(null);
-const [loading, setLoading] = useState(true);
+
 
 const leaderData = data.find(x => x.id === id);
-const leaderPokemon = leaderData?.pokemon;
 
+console.log(moves)
 
+// Fetch Pokemon data from PokeAPI the bracket on the end is for the dependency array which makes it so it only fetches when the name changes
 useEffect(() => {
     async function fetchData() {
-//    Challenge use .then() instead of async/await
+
          const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name?.toLowerCase()}`);
         
         if (response.ok) {
             
-            const data = await response.json();
-            console.log(data.types);
-            setPokemon(data);
+            const pokedata = await response.json();
+            
+            setPokemon(pokedata);
+          
         }
        
     }
@@ -37,6 +41,7 @@ useEffect(() => {
    
     
 },[name])  
+
 
 
   return (
@@ -51,9 +56,12 @@ useEffect(() => {
             <div className='flex gap-3'>
                 <h3 >Level</h3>
                 
-                {pokemon?.types?.map((type: {type:{name:string}}) => (
-                    <p className='uppercase'>{type.type.name}</p>
-                ))}
+               {pokemon?.types?.map((type: { type: { name: string } }, index: number) => (
+                 <p key={index} className="uppercase">
+                 {type.type.name}
+                </p>
+))}
+
                
             </div>
         </div>
@@ -67,7 +75,34 @@ useEffect(() => {
             </div>
                 {/* right */}
             <div className='w-1/2'>
-               <Movecards name='Transform' type='Normal'/>
+               
+
+               {/* {id !== null && data[id - 1]?.pokemon?.map((leaderpokemon, i) => (
+                leaderpokemon.pokemonMoves.map((move, j) => (
+                    <Movecards 
+                    key={`${i}-${j}`}
+                    name={move}
+                    type="Normal"
+                    />
+                ))
+                ))} */}
+
+                {/* {moves?.map((move, index) => (
+                    <Movecards
+                    key={index}
+                    name={move}
+                    type="Normal"
+                    />
+                ))} */}
+
+                {Object.entries(moves || {}).map(([moveName, moveType], index) => (
+                    <Movecards
+                        key={index}
+                        name={moveName}
+                        type={moveType || "Unknown"}
+                    />
+                ))}
+
               
             </div>
         </div>
