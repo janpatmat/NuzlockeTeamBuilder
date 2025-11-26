@@ -6,7 +6,7 @@
     "pokemon": [
       {
         "pokemonId": 1,
-        "pokemonName": "Onix",
+        "pokemonName": "onix",
         "pokemonMoves": {
           "Tackle": "Normal",
           "Bind": "Normal",
@@ -313,7 +313,7 @@
       },
       {
         "pokemonId": 27,
-        "pokemonName": "Nidoking",
+        "pokemonName": "Rhydon",
         "pokemonMoves": {
           "Take Down": "Normal",
           "Rock Blast": "Rock",

@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Charbox from "./components/charbox";
 import data from "./data/gymleadertest.json";
 import Pokebox from "./components/Pokebox";
+import Userpokemon from "./components/user/Userpokemon";
+import UserPokebox from "./components/user/UserPokebox";
 
 export default function Home() {
 
@@ -20,28 +22,7 @@ export default function Home() {
   const leaderPokemon = leaderData?.pokemon;
   
   
-//   useEffect(() => {
-  
-//   try {
-//   async function fetchData() {
-  
-//    const res = await fetch(`https://pokeapi.co/api/v2/move?limit=100000&offset=0`);
-//    if(res.ok){
-//       const movedata = await res.json();
-      
-//       setPokemonMovesType(movedata.results);
-//    }
-//   }
-//   fetchData();
-//   }catch (error) {
-//       console.error("Error fetching move data:", error);
-//   }
-  
-  
-//   }, [])
-// console.log(pokemonMovesType)
-// console.log(Object.values(pokemonMovesType || {}).find((item) => item.name === "tackle"));
-console.log(pokemonMovesType.find((item) => item.name === "tackle"));
+
 
   return (
     <div>
@@ -59,17 +40,21 @@ console.log(pokemonMovesType.find((item) => item.name === "tackle"));
       
     </div>
   
-    
-      
-     {leaderPokemon?.map((leaderpokemon) => (
-  <Pokebox
-    key={`${activeLeader}-${leaderpokemon.pokemonName}-${leaderpokemon.pokemonId}`}
-    id={activeLeader}
-    name={leaderpokemon.pokemonName}
-    moves={leaderpokemon.pokemonMoves}
-  />
-))}
+<div className="grid grid-cols-3 grid-rows-2 gap-2 w-3/4">
 
+
+  {leaderPokemon?.map((leaderpokemon) => (
+    <Pokebox
+      key={`${activeLeader}-${leaderpokemon.pokemonName}-${leaderpokemon.pokemonId}`}
+      id={activeLeader}
+      name={leaderpokemon.pokemonName}
+      moves={leaderpokemon.pokemonMoves}
+    />
+  ))}
+</div>
+
+
+<Userpokemon />
     
     </div>
   );

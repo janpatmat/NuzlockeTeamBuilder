@@ -15,11 +15,11 @@ interface PokeStats {
 
 const Pokebox: React.FC<PokeStats> = ({id, name, moves}) => {
 const [pokemon, setPokemon] = useState<any>(null);
+const [loading, setLoading] = useState(false);
 
 
-const leaderData = data.find(x => x.id === id);
 
-console.log(moves)
+
 
 // Fetch Pokemon data from PokeAPI the bracket on the end is for the dependency array which makes it so it only fetches when the name changes
 useEffect(() => {
@@ -30,8 +30,12 @@ useEffect(() => {
         if (response.ok) {
             
             const pokedata = await response.json();
-            
-            setPokemon(pokedata);
+            const simplified = {
+                name: pokedata.name,
+                types: pokedata.types,
+                sprites: pokedata.sprites.front_default,
+            }
+            setPokemon(simplified);
           
         }
        
@@ -41,15 +45,16 @@ useEffect(() => {
    
     
 },[name])  
+ 
 
 
 
   return (
     <div className='flex flex-col bg-normalGreyCard w-md rounded-xl border-4 border-black'>
         {/* upper */}
-        <div className='flex justify-between p-2 border-b-2 border-black'>
+        <div className='flex justify-between p-3 border-b-2 border-black'>
 
-            <h3>{id}</h3>
+       
             
             <h3 className='uppercase'>{name ? (name) : (<p>Loading...</p>)}</h3>
 
@@ -69,7 +74,9 @@ useEffect(() => {
         <div className='flex pb-1'>
             {/* left */}
             <div className='w-1/2 flex justify-center items-center border-r-2 border-black'>
-                {pokemon ? (<Image src={pokemon.sprites.front_default} alt = "Pokemon Image" width={150} height={100} />) : (<p>Loading...</p>)}
+                {pokemon ? (<Image src={pokemon.sprites} alt = "Pokemon Image" width={150} height={100} />) : (<p>Loading...</p>)}
+              
+
                 
                 
             </div>

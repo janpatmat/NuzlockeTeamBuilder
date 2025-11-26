@@ -16,13 +16,14 @@ const Charbox: React.FC<CharboxProps> = ({ gymLeader, name, isActive, onClick })
         ${isActive ? "border-blue-500" : "border-gray-300 "}
       `}
     >
-      <Image
-        src={gymLeader}
-        alt={name}
-        width={150}
-        height={200}
-        className="rounded-lg"
-      />
+      <img
+  src={gymLeader}
+  alt={name}
+  width={150}
+  height={200}
+  className="rounded-lg"
+/>
+
       <h2 className="mt-2 text-lg font-semibold">{name}</h2>
     </div>
   );
